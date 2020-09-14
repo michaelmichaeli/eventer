@@ -1,0 +1,12 @@
+.MuiSvgIcon-colorAction {
+    font-size: 26px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    opacity: 0.7;
+    position: absolute;
+    &:hover {
+        background-color: grey;
+    }
+}

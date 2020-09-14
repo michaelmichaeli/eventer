@@ -1,0 +1,107 @@
+.event-preview {
+    width: 100%;
+
+
+    .event-link {
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    position: relative;
+    // width: 310px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #00000038;
+    transition: 0.3s;
+    text-align: left;
+    background-color: white;
+
+    p {
+        margin-inline-start: 20px;
+        padding-inline-end: 10px;
+        font-family: secondfontregular;
+    }
+
+    .event-img-container {
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 10px 10px 0px 0px;
+        img {
+            position: absolute;
+        }
+        @include aspect-ratio(1, 1);
+    }
+
+    .label {
+        width: 155px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid $brandingBlue;
+        color: $brandingBlue;
+        font-family: secondfontbold;
+        font-size: rem(18px);
+        background-color: #ffffff;
+        position: absolute;
+        right: 19px;
+        top: 179px;
+        font-weight: bolder;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .muted {
+        border: 2px solid $brandinggreybold;
+        color: $brandinggreybold;
+        text-align: center;
+        font-size: rem(15px);
+    }
+
+    .event-title {
+        font-family: secondfontbold;
+        font-size: rem(23px);
+        margin-bottom: 10px;
+    }
+    .address {
+        font-size: rem(20px);
+        letter-spacing: 0.2px;
+    }
+    .event-time {
+        font-size: rem(20px);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        span {
+            font-size: rem(15px);
+            vertical-align: text-top;
+            text-transform: lowercase;
+            letter-spacing: 0px;
+            margin-inline-start: 2px;
+        }
+    }
+    .event-desc {
+        color: rgb(139, 139, 139);
+        font-size: rem(14px);
+        line-height: 16px;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .bottom-container {
+        border-top: 1px solid $clrborderlight;
+        padding-top: 20px;
+    }
+
+    .event-preview-bottom {
+        margin: 0 10px 0 20px;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-family: secondfontbold;
+        font-size: rem(25px);
+        cursor: pointer;
+    }
+}
+.event-preview:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.664);
+}

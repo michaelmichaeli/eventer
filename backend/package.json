@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "startdev": "nodemon --ignore \"./data\" server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ordotTan/eventer-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ordotTan/eventer-backend/issues"
+  },
+  "homepage": "https://github.com/ordotTan/eventer-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.5.7",
+    "socket.io": "^2.3.0"
+  }
+}

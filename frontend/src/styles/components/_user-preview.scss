@@ -1,0 +1,22 @@
+.user-preview-min {
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+        margin-inline-end: 10px;
+    }
+        .rank-icn {
+            width: 13px;
+    }
+    .ranking {
+        >*{
+            margin-inline-end: 2px;
+        }
+    }
+    h5 {
+        color: $starClr;
+    }
+    h6 {
+        color: $textMuteClr;
+    }
+}

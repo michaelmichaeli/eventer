@@ -1,0 +1,39 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+@import "basics/avatar.scss";
+
+// components
+@import "components/hero-dissolve.scss";
+@import "components/nav-bar.scss";
+@import "components/footer.scss";
+@import "components/search-bar.scss";
+@import "components/category-links.scss";
+@import "components/event-list.scss";
+@import "components/event-preview.scss";
+@import "components/user-preview.scss";
+@import "components/upcoming-events.scss";
+@import "components/user-desc.scss";
+@import "components/_review-list.scss";
+@import "components/event-posts.scss";
+@import "components/map-container.scss";
+@import "components/category-gallery.scss";
+@import "components/image-preview.scss";
+
+// pages
+@import "pages/login.scss";
+@import "pages/home-page.scss";
+@import "pages/event-edit.scss";
+@import "pages/event-details.scss";
+@import "pages/event-index.scss";
+@import "pages/user-details.scss";

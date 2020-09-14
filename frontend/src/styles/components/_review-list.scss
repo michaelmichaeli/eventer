@@ -1,0 +1,45 @@
+.review-list-container {
+    width: 100%;
+
+    p {
+        font-family: secondfontbold;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    text-align: left;
+    > * {
+        width: 100%;
+    }
+
+    padding: 3px 10px;
+
+    .date {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: $brandinggreybold;
+        font-size: rem(12px);
+    }
+
+    .user-preview-min {
+        margin: 10px 10px;
+    }
+
+    .review-item {
+        position: relative;
+
+        min-height: 140px;
+        border-bottom: 1px solid #e7e7e7;
+        > * {
+            margin-bottom: 5px;
+        }
+        .review-stars {
+            margin-left: 10px;
+        }
+        .review-star {
+            width: 20px;
+            margin-bottom: 2px;
+        }
+    }
+}

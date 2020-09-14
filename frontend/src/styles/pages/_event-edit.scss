@@ -1,0 +1,168 @@
+.bg-img-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  .bg-img {
+    opacity: 0.4;
+    z-index: 1;
+    height: 100%;
+    @include aspect-ratio(1, 1);
+  }
+}
+.form-container {
+  z-index: 2;
+  margin-top: 65px;
+  .react-tabs__tab-list {
+    border-bottom: 0px;
+    padding-top: 20px;
+    margin: 0;
+    .react-tabs__tab {
+      color: #808080d9;
+      font-size: 1.2rem !important;
+      border: 1px solid grey;
+      border-radius: 5px 5px 0 0;
+    }
+    .react-tabs__tab--selected {
+      color: $clr2 !important;
+    }
+  }
+
+  .event-details-container {
+    // To fix the "page-within-a-page" margin issue
+    margin-top: 0px;
+  }
+
+  .event-edit {
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    width: 700px;
+    padding-top: 20px;
+    margin: auto;
+    label {
+      font-size: 1rem;
+    }
+    .event-desc {
+      margin-right: 100px;
+    }
+
+    .MuiFormControl-root {
+      width: 200px;
+      &.address {
+        width: 280px;
+      }
+      &.text-switch {
+        width: 110px;
+      }
+      &.text-switch-capacity {
+        width: 120px;
+      }
+    }
+    .MuiSelect-select.MuiSelect-select {
+      text-align: left;
+    }
+    .textarea-input {
+      margin-top: 15px;
+    }
+
+    .MuiFormControlLabel-root.switch {
+      margin-top: 12px;
+    }
+
+    .upload-button {
+      margin-top: 30px;
+      padding-right: 10px;
+    }
+    .time-label {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      text-align: left;
+      color: #747474;
+      .date-input {
+        font-size: 1rem;
+      }
+      .time-input {
+        font-size: 1rem;
+      }
+    }
+    .img-container {
+      height: 200px;
+      width: 200px;
+      margin-top: 10px;
+      img {
+        border-radius: 15px;
+      }
+    }
+    .MuiSwitch-colorPrimary.Mui-checked {
+      color: $brandingPurple;
+    }
+    .MuiFormGroup-root {
+      height: 50px;
+      .MuiInputBase-input {
+        width: 80px;
+      }
+      label + .MuiInput-formControl {
+        margin-right: 10px;
+      }
+    }
+    .MuiButton-containedPrimary {
+      background-color: darken($brandingBlue, 20);
+      margin: 6px 6px 6px 0;
+      &:hover {
+        opacity: 0.7;
+      }
+      &.upload-button {
+        background-color: lighten($brandingBlue, 20);
+      }
+    }
+  }
+  .images-container {
+    width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .img-preview {
+      width: 158px;
+      // margin-bottom: 5px;
+      border-radius: 15px;
+      margin: 5px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .form-container {
+    .event-details {
+      .google-map {
+        top: 195px !important;
+        height: 130px !important;
+      }
+    }
+    .event-edit {
+      flex-direction: column;
+      width: 320px;
+      padding: 20px;
+      .MuiFormControl-root {
+        width: 250px !important;
+        &.text-switch {
+          width: 90px !important;
+        }
+        &.text-switch-capacity {
+          width: 90px !important;
+        }
+      }
+    }
+    .images-container {
+      width: 320px;
+      margin: auto;
+      margin-top: 10px;
+      .img-preview {
+        width: 300px;
+        margin: 5px;
+      }
+    }
+  }
+}

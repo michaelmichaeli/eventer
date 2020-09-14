@@ -1,0 +1,81 @@
+.event-index {
+    .event-list {
+        margin-top: 250px;
+        justify-content: center;
+    }
+
+    h1.no-events {
+        margin:0;
+        margin-top: 100px;
+        color: lightgray;
+        font-size: 3rem;
+
+    }
+
+    .event-list-filter {
+        margin-bottom: 30px;
+        background-color: white;
+        box-shadow: 0 1px 3px #00000057;
+        width: 100vw;
+        height: 100px;
+        position: fixed;
+        z-index: 1;
+        transition: .7s;
+
+        .filters-set {
+            width: 40vw;
+            margin-bottom: 10px;
+            .MuiAutocomplete-inputRoot {
+                border-bottom: 1px solid black;
+                height: 40px;
+                width: 300px;
+            }
+        }
+    }
+    .active {
+        top: 110px;
+    }
+    .inactive {
+        top: 20px;
+    }
+
+    .category-links {
+        position: fixed;
+        top: 60px;
+    }
+    @media screen and (max-width: 550px) {
+        .event-list {
+            justify-self: center;
+            margin-top: 350px;
+            .event-preview {
+                width: 100%;
+                border-radius: 0px;
+                .event-img-container {
+                    border-radius: 0px;
+                }
+            }
+        }
+        .event-list-filter {
+            // display: none;
+            height: 200px;
+        }
+        .category-links {
+            box-shadow: 0 1px 3px #00000057;
+        }
+        .inactive {
+            top: -80px;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .event-preview {
+            width: 100vw;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .event-index {
+        display: flex;
+        justify-content: center;
+    }
+}

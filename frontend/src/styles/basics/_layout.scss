@@ -1,0 +1,42 @@
+.main-container {
+    display: grid;
+    justify-self: center;
+    @include for-mobile-layout {
+        grid-template-columns:
+        minmax(8px, 8px)
+        minmax(auto, 1fr)
+        minmax(8px, 8px)
+    }
+    @include for-narrow-layout {
+        grid-template-columns:
+            minmax(20px, 1fr)
+            minmax(auto, $normal-breakpoint)
+            minmax(20px, 1fr);
+    }
+    @include for-normal-layout  {
+        grid-template-columns:
+            minmax(40px, 1fr)
+            minmax(auto, $narrow-breakpoint)
+            minmax(40px, 1fr);
+    }
+    @include for-wide-layout  {
+        grid-template-columns:
+            minmax(40px, 1fr)
+            minmax(auto, 1500px)
+            minmax(40px, 1fr);
+    }
+
+    > * {
+        grid-column: 2;
+        &.full {
+            grid-column: 1/-1;
+        }
+    }
+}
+
+.preview-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 285px);
+    gap: 26px;
+    margin-bottom: 25px;
+}

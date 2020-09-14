@@ -1,0 +1,67 @@
+.user-desc {
+    padding: 30px 30px 0px 30px;
+
+    > * {
+        width: 100%;
+    }
+
+    .user-info {
+        .full-name {
+            font-size: rem(25px);
+            font-weight: 700;
+            line-height: 40px;
+            font-family: secondfontbold;
+        }
+        h4 {
+            margin-bottom: 10px;
+            font-family: secondfontlight;
+            font-size: rem(20px);
+        }
+        margin-bottom: 5px;
+    }
+
+    .user-img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .user-stats {
+        > * {
+            width: 220px;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            :nth-child(even) {
+                width: 22px;
+            }
+        }
+        .follow-btn {
+            margin: 30px 0;
+            width: 160px;
+            color: white;
+            height: 35px;
+            background: $brandingBlue;
+            border-radius: 999px;
+            text-transform: uppercase;
+            justify-content: center;
+            font-size: rem(20px);
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .2s;
+            line-height:inherit;
+        }
+        .follow-btn:hover {
+            background-color: darken($color: $brandingBlue, $amount: 15%);
+        }
+        .unfollow {
+            background-color: rgb(173, 173, 173);
+            color: rgb(195, 195, 195);
+        }
+        .unfollow:hover {
+            background-color: darken($color: rgb(173, 173, 173), $amount: 30%);
+          }
+    }
+}

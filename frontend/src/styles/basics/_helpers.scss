@@ -1,0 +1,112 @@
+.fs18 {
+  font-size: rem(18px);
+}
+.fs20 {
+  font-size: rem(20px);
+}
+.fs24 {
+  font-size: rem(24px);
+}
+.fs28 {
+  font-size: rem(28px);
+}
+.fs30 {
+  font-size: rem(30px);
+}
+
+// Flex-Helpers
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.space-around {
+    justify-content: space-around;
+  }
+  &.justify-end {
+    justify-content: end;
+  }
+  &.justify-flex-end {
+    justify-content: flex-end;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.align-start {
+    align-items: flex-start;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+//Alignments
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.margin0auto {
+  margin: 0 auto;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+// Position helpers
+.relative {
+  position: relative;
+}
+
+// Spread helpers
+
+.row-spread {
+  > * {
+    margin-inline-end: 20px;
+  }
+}
+
+// Media Helpers
+
+.square-ratio {
+  @include aspect-ratio(1, 1);
+  object-fit: cover;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+

@@ -1,0 +1,419 @@
+.event-details {
+  margin-bottom: 20px;
+  .event-details-container {
+    position: relative;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    .nav-title {
+      grid-column: 1;
+      grid-row: 1;
+      align-items: end;
+      margin-bottom: 5px;
+      .navigator {
+        // margin-bottom: 20px;
+        font-size: 15px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: lighten(blue, 20);
+        }
+
+        span {
+          margin: 0 5px 0 5px;
+          color: lighten(blue, 20);
+        }
+        .btn-link {
+          display: inline;
+          cursor: pointer;
+          background-color: white;
+          color: lighten(blue, 20);
+          border: none;
+          padding: 0;
+          font-size: 15px;
+        }
+      }
+      .event-title {
+        h2 {
+          font-size: rem(35px);
+          text-align: left;
+        }
+        .icon-edit {
+          width: 30px;
+          margin-inline-start: 5px;
+        }
+      }
+    }
+
+    .user-and-created {
+      grid-column: 1/2;
+      grid-row: 3;
+      text-align: left;
+      .advanced {
+        margin-inline-end: 10px;
+      }
+    }
+
+    .img-gallery {
+      grid-column: 1/2;
+      grid-row: 4;
+    }
+
+    .date-time-and-edit {
+      grid-column: 1/2;
+      grid-row: 2;
+      width: 100%;
+      align-items: baseline;
+      margin-bottom: 10px;
+
+      .event-time-place {
+        font-size: rem(20px);
+        font-weight: 600;
+        text-align: left;
+        align-self: center;
+        color: rgb(144, 144, 144);
+      }
+      span.event-month {
+        text-transform: uppercase;
+      }
+      span.event-day {
+        color: rgb(255, 62, 62);
+      }
+    }
+
+    .event-posts {
+      grid-column: 1/2;
+      grid-row: 7;
+    }
+
+    .desc-container {
+      grid-column: 1/2;
+      grid-row: 5;
+      margin-bottom: 20px;
+      .event-desc {
+        text-align: left;
+        justify-content: end;
+      }
+      p,
+      pre {
+        margin-top: 10px;
+        max-width: 70ch;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+      }
+    }
+
+    .tags-container {
+      grid-column: 1;
+      grid-row: 6;
+      .event-tags {
+        width: auto;
+        .clean-list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        .event-tag {
+          border: 1px solid #9a9ca2;
+          background-color: #fafafa;
+          margin-inline-end: 10px;
+          padding: 2px 10px;
+          font-family: secondfontregular;
+          border-radius: 3px;
+          color: #9a9ca2;
+        }
+      }
+    }
+
+    .inactive-notification {
+      color: red;
+      margin-right: 10px;
+    }
+
+    .user-preview-min {
+      margin-bottom: 10px;
+      .avatar {
+        width: 50px;
+        height: 50px;
+      }
+      .name-rank {
+        flex-direction: row;
+        .user-preview-name-link {
+          margin-inline-end: 10px;
+        }
+      }
+    }
+    .icon-edit {
+      width: 30px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+    .icon-inactive {
+      width: 35px;
+    }
+
+    .map-container {
+      grid-column: 2;
+      grid-row: 1/4;
+      position: sticky;
+      top: 120px;
+      .map {
+        .google-map {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+          grid-column: 2;
+          grid-row: 7;
+          width: 100%;
+          height: 100% !important;
+        }
+      }
+    }
+
+    .user-lists {
+      z-index: 1;
+      position: sticky;
+      top: 333px;
+      grid-column: 2;
+      grid-row: 4/5;
+      height: 194px;
+      .minimal-event-list-container {
+        margin-bottom: 40px;
+      }
+      .user-details-list {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+        border-radius: 7px;
+        background-color: #ffffff;
+        height: 100%;
+        margin-bottom: 15px;
+        .list-header {
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.21);
+          border-radius: 7px 7px 0 0;
+          height: 60px;
+          h4 {
+            margin-inline-start: 20px;
+            font-size: rem(25px);
+          }
+          .attendees-state {
+            margin-inline-end: 10px;
+            font-size: rem(17px);
+            color: $brandingBlue;
+          }
+        }
+        .list {
+          height: 100%;
+          width: 100%;
+          padding-bottom: 60px;
+        }
+        .followers-grid {
+          overflow: auto;
+          width: 100%;
+          height: 100%;
+          padding: 10px 20px 0 20px;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+          grid-template-rows: repeat(auto-fill, minmax(45px, 1fr));
+          grid-gap: 15px;
+          align-items: flex-start;
+          .user-preview-min {
+            justify-content: center;
+          }
+          .avatar {
+            width: 45px;
+            height: 45px;
+            margin: 0;
+          }
+          .user-preview-name-link {
+            display: none;
+          }
+        }
+        .followers-grid::-webkit-scrollbar {
+          width: 10px;
+          border-radius: 999px;
+        }
+
+        .followers-grid::-webkit-scrollbar-track {
+          background-color: rgba(0, 0, 0, 0);
+        }
+
+        .followers-grid::-webkit-scrollbar-thumb {
+          background-color: $brandingBlue;
+          border-radius: 100px;
+        }
+      }
+      .cta-btns {
+        align-self: start;
+        margin-bottom: 20px;
+        .cta-btn {
+          height: 55px;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+          border-radius: 7px;
+          font-size: rem(30px);
+          transition: 0.2s;
+        }
+
+        .leave {
+          background-color: $brandinggreybold;
+          color: rgb(195, 195, 195);
+          font-size: rem(25px);
+        }
+        .attend {
+          background-color: $brandingBlue;
+          color: white;
+        }
+        .attend:hover {
+          background-color: darken($color: $brandingBlue, $amount: 15%);
+        }
+        .leave:hover {
+          background-color: darken($color: rgb(173, 173, 173), $amount: 30%);
+        }
+      }
+      .social-share-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .social-share {
+          width: 100%;
+        }
+        .share-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          button {
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          button:hover {
+            width: 115%;
+            height: 115%;
+          }
+          svg {
+            transition: 0.3s;
+          }
+          svg:hover {
+            width: 115%;
+            height: 115%;
+            align-self: center;
+            justify-self: center;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .event-details-container {
+      // position: relative;
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+      .event-posts {
+        grid-row: 22;
+        grid-column: 1;
+      }
+      .user-lists {
+        position: static;
+        grid-row: 8;
+        grid-column: 1;
+        .cta-btns {
+          align-self: auto;
+          .cta-btn {
+            width: 100%;
+          }
+        }
+
+        // .social-share-container {
+        //   width: 100%;
+        //   position: static;
+        //   margin-bottom: 10px;
+        // }
+      }
+
+      .map-container {
+        display: none;
+      }
+      .desc-container {
+        align-items: end;
+        justify-content: start;
+        width: 100%;
+        .event-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          width: 100%;
+          p {
+            width: 100%;
+          }
+          .icon-edit {
+            align-self: center;
+          }
+        }
+      }
+      .tags-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        .event-tags {
+          align-self: center;
+          width: 100%;
+          .clean-list {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(auto, 120px));
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            .event-tag {
+              // padding: 0px 7px;
+              border-radius: 3px;
+              color: rgb(156, 156, 156);
+              justify-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 5px 1fr 5px;
+    .event-details-container {
+      margin-top: 70px;
+    }
+  }
+  .desc-container {
+    align-items: end;
+  }
+}
+
+.posts-container {
+  position: relative;
+  .MuiSvgIcon-root {
+    font-size: 35px !important;
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+  }
+}
+
+.ReactGridGallery_tile-viewport img {
+  cursor: inherit !important;
+}
+
+//hiding the X button in the marker info-windoes, as it cause inconsistent behaviour. 
+.gm-style-iw.gm-style-iw-c {
+  button {
+    display: none !important;
+  }
+}

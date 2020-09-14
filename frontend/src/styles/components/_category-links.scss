@@ -1,0 +1,46 @@
+.category-links {
+    background-color: white;
+    z-index: 3;
+    height: 60px;
+    width: 100vw;
+    margin-bottom: 30px;
+    .categories {
+        width: 65%;
+        height: 100%;
+        > * {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            color: $brandinggreybold;
+            font-weight: bolder;
+            font-size: rem(18px);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            color: $brandingBlue;
+        }
+        button:focus {
+            outline: none !important ;
+            color: $brandingBlue;
+        }
+        & > .active {
+            box-shadow: inset 0 -5px $brandingBlue;
+        }
+    }
+    @media screen and (max-width: 1065px) {
+        .categories {
+            width: 80%;
+            >*{
+                font-size: 1.7vw;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .categories {
+            width: 98%;
+            >*{
+                font-size: 2.5vw;
+            }
+        }
+    }
+}

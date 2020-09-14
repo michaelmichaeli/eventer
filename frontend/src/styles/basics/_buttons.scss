@@ -1,0 +1,38 @@
+.upcoming-scroll-btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: $clr1;
+    font-weight: bolder;
+    font-size: rem(35px);
+    cursor: pointer;
+    border-radius: 999px;
+}
+
+.cta-btn-full {
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 999px;
+    font-weight: bolder;
+    font-size: rem(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr1;
+    color: white;
+    cursor: pointer;
+}
+.cta-btn-small {
+    border: none;
+    width: 55px;
+    height: 20px;
+    border-radius: 3px;
+    font-weight: lighter;
+    font-size: rem(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 134, 219);
+    color: white;
+    cursor: pointer;
+}

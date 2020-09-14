@@ -1,0 +1,155 @@
+.home-page-container {
+    .main-header-container {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 576px;
+        .header {
+            position: absolute;
+            z-index: 10;
+            color: white;
+            h1 {
+                height: 66px;
+                color: #ffffff;
+                font-family: secondfontbold;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 27.79px;
+                letter-spacing: 0.85px;
+            }
+        }
+    }
+    .category-links {
+        box-shadow: 0 1px 3px #00000057;
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: $brandingGrey;
+        font-size: rem(45px);
+        width: 90%;
+        // padding-left: 30px;
+        margin: 0 auto;
+        text-align: left;
+        @media screen and (max-width: 900px) {
+            text-align: center;
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .main-header-container {
+            .header {
+                h1 {
+                    font-size: 8.6vw;
+                }
+            }
+            .seach-bar-container {
+                width: 75vw;
+            }
+        }
+    }
+}
+
+.home-page-container {
+    .hero-dissolve {
+        display: block;
+        width: 1920px;
+        height: 576px;
+        overflow: hidden;
+        position: absolute;
+
+        > * {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            @media screen and (max-width: 1070px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.hero-image:nth-child(1) {
+    animation: fade 49s infinite;
+    background-image: url("../../assets/imgs/hero1.png");
+    z-index: 8;
+    filter: contrast(2);
+}
+.hero-image:nth-child(2) {
+    animation: fade 49s 7s linear infinite;
+    background-image: url("../../assets/imgs/hero2.png");
+    z-index: 7;
+    background-size: cover;
+    filter: contrast(0.7);
+}
+.hero-image:nth-child(3) {
+    animation: fade 49s 14s linear infinite;
+    background-image: url("../../assets/imgs/hero3.png");
+    z-index: 6;
+    background-size: cover;
+}
+.hero-image:nth-child(4) {
+    animation: fade 49s 21s linear infinite;
+    background-image: url("../../assets/imgs/hero4.png");
+    z-index: 5;
+    background-size: cover;
+    filter: grayscale(0.4);
+    // filter: contrast(1);
+}
+.hero-image:nth-child(5) {
+    animation: fade 49s 28s linear infinite;
+    background-image: url("../../assets/imgs/hero5.png");
+    z-index: 4;
+    background-size: cover;
+}
+.hero-image:nth-child(6) {
+    animation: fade 49s 35s linear infinite;
+    background-image: url("../../assets/imgs/hero6.png");
+    z-index: 3;
+    background-size: cover;
+    filter: contrast(1);
+}
+.hero-image:nth-child(7) {
+    animation: fade 49s 42s linear infinite;
+    background-image: url("../../assets/imgs/hero7.png");
+    z-index: 2;
+    background-size: cover;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    13% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.home-page-container {
+    .hero-dissolve::before {
+        content: ""; // ::before and ::after both require content
+        // mix-blend-mode: hard-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: linear-gradient(-215deg, #16d877 0%, #18b1eb 100%);
+        background-image: linear-gradient(-215deg, #84d816 0%, #18b1eb 100%);
+        opacity: 0.7;
+        z-index: 9;
+    }
+}

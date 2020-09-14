@@ -1,0 +1,56 @@
+.upcoming-container {
+    .InfiniteCarousel {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .InfiniteCarouselFrame {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+    .InfiniteCarouselSlide {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 525px !important;
+    }
+
+    .InfiniteCarouselArrowNext {
+        right: -16px;
+    }
+
+    .InfiniteCarouselArrowPrev {
+        left: -16px;
+    }
+
+    .InfiniteCarouselArrowIcon {
+        border: solid $brandingBlue !important;
+        border-width: 0 5px 5px 0 !important;
+    }
+
+    .InfiniteCarouselDots {
+        // margin-top: 40px;
+        margin: 0;
+        position: relative;
+        > * {
+            outline: none;
+        }
+        .InfiniteCarouselDotActiveIcon {
+            background-color: $brandingBlue;
+        }
+    }
+
+    @media screen and (max-width: 700) {
+        
+        .InfiniteCarouselDot {
+            margin: 0 0 !important;
+        }
+        .InfiniteCarouselArrowNext {
+            right: -18px;
+        }
+    
+        .InfiniteCarouselArrowPrev {
+            left: -18px;
+        }
+    }
+}

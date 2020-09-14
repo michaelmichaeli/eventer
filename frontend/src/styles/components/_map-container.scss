@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+  .google-map {
+    width: 280px !important;
+
+  }
+}
+
+@media (max-width: 760px) {
+  .google-map {
+    right: 50px !important;
+    position: absolute !important;
+    top: 90px !important;
+    height: 150px !important;
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 550px) {
+    .google-map {
+      width: 150px !important;
+    }
+  }

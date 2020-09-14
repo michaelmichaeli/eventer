@@ -1,0 +1,25 @@
+.seach-bar-container {
+    background-color: white;
+    border-radius: 999px;
+    width: 450px;
+    height: 50px;
+    border: 2px solid $clrborderlight;
+    padding-inline-start: 20px;
+    .search-input {
+        font-size: rem(16px);
+        outline: none;
+        background-color: none;
+        border: none;
+        width: 90%;
+        height: 80%;
+    }
+    .search-icn {
+        border-left: 2px solid #e9e9e9;
+        fill: #474747;
+        padding-inline-start: 12px;
+        margin-inline-end: 19px;
+        width: 42px;
+        height: 100%;
+        cursor: pointer;
+    }
+}
