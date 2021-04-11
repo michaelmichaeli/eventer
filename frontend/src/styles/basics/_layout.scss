@@ -40,3 +40,13 @@
     gap: 26px;
     margin-bottom: 25px;
 }
+
+@media screen and (max-width: 550px) {
+    .preview-grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
